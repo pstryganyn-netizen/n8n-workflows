@@ -1,0 +1,74 @@
+{
+  "name": "My workflow 3",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "d6c28bc5-0555-4be4-9eb9-e97d98e6d53e",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "dfe76d15-f873-4ebb-8c08-496778152e53",
+              "name": "1",
+              "value": "2",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        208,
+        0
+      ],
+      "id": "663e7150-5884-4509-9cd7-ef9fd113d399",
+      "name": "Edit Fields"
+    }
+  ],
+  "pinData": {
+    "When clicking ‘Execute workflow’": [
+      {
+        "json": {
+          "hello": "Petro"
+        }
+      }
+    ]
+  },
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "bac1d3c4-a1d6-4699-83c6-cee22f5dd715",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "21dbe26724b6fe5a7178045ff0bd5c7cebe23d5e7001764456523bb10714727c"
+  },
+  "id": "DpBycthg31-jetdwFB3a4",
+  "tags": []
+}
